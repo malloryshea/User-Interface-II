@@ -27,6 +27,7 @@ time, mark, audio, video {
     max-width:100%;
     background-color:lightpink;
     text-decoration:none;
+    border: 1px solid red;
     
 }
 html {
@@ -136,7 +137,10 @@ footer a:hover{
     background-color:white;
     color:black;
 }
-@media(max-width:500px){
+@media (max-width:500px){
+    header{
+        width:100%;
+    }
     h2 {
         font-size:40px;
     }
@@ -147,13 +151,13 @@ footer a:hover{
         height:30vh;
         width:100%;
         margin-bottom:3%;
+        width:100%;
     }
     .images{
         margin-left:5%;
         display:flex;
         flex-wrap: wrap;
         justify-content:center;
-        
     }
     .img1 {
         width:45%;
@@ -166,18 +170,45 @@ footer a:hover{
     }
     .img3 {
         width:40%;
-       
-        
     }
     .img4 {
         width:50%;
-        height:25vh;
-       
-        
-        
-        
+        height:25vh;  
     }
     .images p {
         margin-left:5%;
         margin-bottom:5%;
     }
+}
+@media(max-width:800px){
+    h2 {
+        font-size:40px;
+    }
+    .background img {
+        height:30vh;
+    }
+    .images {
+        display:flex;
+        justify-content: center;
+        align-content: center;
+        height: 20%;
+        flex-wrap:wrap;
+        width:100%;
+    }
+    .images img{
+        height:350px;
+        width:350px;
+        
+    }
+    .images div{
+        margin:2%;
+    }
+    .img4 img{
+        margin-left:0;
+    }
+    .images p {
+        padding:0%;
+        width:100%;
+        margin:2% 0;
+    }
+}
